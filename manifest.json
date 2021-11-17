@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Twitch Bonus Auto-Clicker",
+  "version": "1.0",
+  "description": "Clicks the randomly appearing green Claim Bonus button automatically.",
+  "icons": {
+    "48": "icons/48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["autoClicker.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{6897133e-f07b-43fe-adcc-41e7fa01764e}",
+      "strict_min_version": "42.0"
+    }
+  }
+}
